@@ -51,7 +51,9 @@ body {
     col-1 styles
                     */
 .col-1 {
-    background-color: crimson;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-color: #adadae;
 }
 
 
