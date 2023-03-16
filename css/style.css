@@ -6,6 +6,7 @@
 
 body {
     background-color: #f9fafb;
+    font-family: 'DM Sans', sans-serif;
 }
 
 
@@ -28,11 +29,6 @@ body {
     flex-direction: column;
 }
 
-.header, 
-.footer {
-    flex: 1;
-}
-
 .form {
     display: flex;
     flex-flow: row wrap;
@@ -51,11 +47,34 @@ body {
 
 
 
-
-
+/*
+    col-1 styles
+                    */
 .col-1 {
     background-color: crimson;
 }
+
+
+
+/*
+    col-2 styles
+                    */
+
+.header {
+    font-size: 1.4rem;
+    line-height: 1.3;
+
+    padding: 7rem 5rem 3rem 2rem;
+    max-width: 46.875rem;
+}
+
+.header p:nth-of-type(3) {
+    margin-top: 2rem;
+}
+
+
+
+
 
 .form-section {
     background-color: #ffffff;
