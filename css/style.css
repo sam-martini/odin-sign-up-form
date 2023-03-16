@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f9fafb;
+}
+
 
 /*
     Page Layout
@@ -36,7 +40,6 @@
     row-gap: 1.75rem;
     column-gap: 3rem;
     padding: 2rem;
-    border: 1px solid black;
 }   
 
 .form-input {
@@ -54,14 +57,6 @@
     background-color: crimson;
 }
 
-.header {
-    background-color: aquamarine;
-}
-
 .form-section {
-    background-color: bisque;
-}
-
-.footer {
-    background-color: cornflowerblue;
+    background-color: #ffffff;
 }
