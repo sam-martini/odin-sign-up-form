@@ -54,6 +54,32 @@ body {
     background-image: url("images/hero.jpg");
     background-size: cover;
     background-color: #adadae;
+    position: relative;
+    z-index: -1;
+}
+
+.logo-banner {
+    height: 8.25rem;
+    width: 100%;
+    position: absolute;
+    top: 10rem;
+    background-color: #00000061;
+}
+
+.logo-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 8rem;
+}
+
+.logo-text {
+    font-family: 'Permanent Marker', cursive;
+    color: #ffffff;
+    padding-left: .25rem;
 }
 
 
@@ -132,13 +158,23 @@ button {
 
 
 
+
+
+@media (max-width: 1132px) {
+    .logo-banner {
+        top: 11.75rem;
+    }
+}
+
 @media (max-width: 830px) {
     .header {
         font-size: 1.25rem;
     }
-
     .form-input {
         flex-basis: 40%;
+    }
+    .logo-banner {
+        top: 11rem;
     }
 }
 
@@ -152,7 +188,13 @@ button {
     }
     .col-2 {
         flex-basis: 75%;
-        align-items: center;
+    }
+    .logo-banner {
+        top: 3rem;
+        height: 6rem;
+    }
+    .logo {
+        height: 5.75rem;
     }
     .header {
         padding: 1rem 1rem;
@@ -184,5 +226,8 @@ button {
     }
     .form-input {
         flex-basis: 80%;
+    }
+    .logo-banner {
+        top: 1rem;
     }
 }
