@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="css/normalize.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -38,42 +39,45 @@
             <div class="col-2-item form-section">
                 <p>Let's do this!</p>
                 <form action="#" class="form">
-                    <div class="form-input">
-                        <label for="first_name">First Name</label>
-                        <input type="text" id="first_name" name="first_name">
+                    <div class="form-grid">
+                        <div class="form-input">
+                            <label for="first_name">First Name*</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+    
+                        <div class="form-input">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name">
+                        </div>
+                        
+                        <div class="form-input">
+                            <label for="user_email">Email*</label>
+                            <input type="email" id="user_email" name="email" required>
+                        </div>
+    
+                        <div class="form-input">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="text" id="phone_number" name="phone_number">
+                        </div>
+    
+                        <div class="form-input">
+                            <label for="user_password">Password*</label>
+                            <input type="password" id="user_password" name="password" required>
+                            <small class="password-feedback"></small>
+                        </div>
+    
+                        <div class="form-input">
+                            <label for="user_password">Confirm Password*</label>
+                            <input type="password" id="user_password" name="confirmpassword" required>
+                        </div>
                     </div>
-
-                    <div class="form-input">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" id="last_name" name="last_name">
-                    </div>
-                    
-                    <div class="form-input">
-                        <label for="user_email">Email</label>
-                        <input type="email" id="user_email" name="email">
-                    </div>
-
-                    <div class="form-input">
-                        <label for="phone_number">Phone Number</label>
-                        <input type="text" id="phone_number" name="phone_number">
-                    </div>
-
-                    <div class="form-input">
-                        <label for="user_password">Password</label>
-                        <input type="password" id="user_password" name="password">
-                    </div>
-
-                    <div class="form-input">
-                        <label for="user_password">Confirm Password</label>
-                        <input type="password" id="user_password" name="password">
-                    </div>
-                </form>
             </div>
 
 
 
             <div class="col-2-item footer">
-                <button type="submit">Create Account</button>
+                        <button type="submit">Create Account</button>
+                </form>
                 <p>Already have an account? Log in</p>
             </div>
 
