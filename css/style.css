@@ -27,8 +27,6 @@ body {
     z-index: -1;
 }
 
-
-
 .logo-banner {
     height: 8.25rem;
     display: flex;
@@ -38,6 +36,11 @@ body {
 
 .col-1-top {
     min-height: 25%;
+}
+
+.col-1 p {
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -105,7 +108,6 @@ body {
     background-color: #00000061;
 }
 
-
 .logo {
     height: 8rem;
 }
@@ -114,6 +116,12 @@ body {
     font-family: 'Permanent Marker', cursive;
     color: #ffffff;
     padding-left: .25rem;
+}
+
+.col-1 p {
+    font-size: small;
+    padding-bottom: .25rem;
+    opacity: 40%;
 }
 
 
@@ -147,7 +155,7 @@ body {
 
 
 /*
-    button styles
+    button / link styles
                     */
 
 button {
@@ -158,6 +166,10 @@ button {
     border-radius: 8px;
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.26);
     background-color: #84bb53;
+}
+
+a:link {
+    color: #ffffff;
 }
 
 
@@ -196,19 +208,13 @@ input:focus {
     media queries
                 */
 @media (max-width: 480px) {
-    .header {
-       
+    .container {
+        flex-direction: column;
     }
-    .header p:nth-of-type(3) {
-      
+    .col-1-top {
+        min-height: 0%;
     }
-    .form {
-       
-    }
-    .form-input {
-     
-    }
-    .logo-banner {
-   
+    .form-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
